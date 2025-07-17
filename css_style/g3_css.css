@@ -27,9 +27,21 @@
     border-radius: 10px;
     font-size: 1.25rem;
     font-weight: 600px;
+    cursor: pointer;
+}
+.all_btn:hover{
+    background-color: bisque;
+    color: black;
 }
 
+
+
 /* unique classes */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .navbar{
     justify-content: space-between;
     align-items: center;
@@ -76,11 +88,111 @@
     width: 100%;
 }
 
+/* section_cls */
+.section_cls{
+    align-items: center;
+}
+
+.team_img_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 5.31rem ;
+}
+.feature{
+    max-width: 33.5rem;
+    margin-left: 4.68rem;
+}
+
+.feature_title{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+#feature_word{
+    color: #FF900E;
+    
+}
+
+
+
+/* ************************** love and enjoy********************** */
+.love_enjoy{
+    justify-content: center;
+    gap: 9.12rem
+    ;
+    margin-top: 8.125rem;
+}
+.love_enjoy_title{
+    border-left: 5px solid #FF900E;
+    padding: 1.2rem;
+    font-size: 2.8rem;
+    max-width: 29.25rem;
+
+}
+
+.love_enjoy_pera{
+    max-width: 36.625rem;
+}
+
+.box_title{
+    max-width: 32.125rem;
+}
+
+.love_enjoy_box{
+    padding: 1.6rem;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.25rem; 
+    border-radius: 10px;  
+}
+
+.ten_years_exp{
+    max-width: 21.325rem;
+}
+
+#ten_years{
+    font-size: 65px;
+    font-weight: bold;
+    
+}
+.ten_years_exp{
+    padding: 45px 43px;
+    margin-left: -54px;
+    margin-top: -77px;
+}
+
+/* ************************responsive small design********************************** */
 @media screen and (max-width:576px) {
-    .navbar, .nav_link{
+    .navbar, 
+    .nav_link,
+    .section_cls,
+    .love_enjoy{
+        flex-direction: column;
+    }
+
+    .team_img_container{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .feature{
+        margin-left: 1.25rem;
+    }
+    #ten_years{
+        font-size: 30px;
+    }
+    .ten_years_exp{
+        padding: 20px 30px;
+        max-width: 200px;
+        margin: 10px 20px 10px 100px;
+    }
+
+}
+
+
+
+/* ************************responsive medium device************************ */
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .section_cls{
         flex-direction: column;
     }
 }
 
-
-/* ************************************************ */
