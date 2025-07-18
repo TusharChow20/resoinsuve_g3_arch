@@ -207,10 +207,18 @@ main{
     text-align: center;
     background-color: #FFF4E7;
 }
-/* .footer{
-    max-width: 1440px;
+.footer{
+    min-height: 10%;
+    /* padding: 30%; */
+    /* max-width: 1440px; */
     margin: 10%;
-} */
+}
+.footer_div{
+    padding: 1%;
+}
+.footer_div p{
+    font-size: 20px;
+}
 /* ************************responsive small design********************************** */
 @media screen and (max-width:576px) {
     .navbar, 
@@ -240,12 +248,15 @@ main{
         margin: 10px 20px 10px 100px;
     }
     .some_fact{
-        height: 600px;
-        width: 1440px;
+        /* height: 600px;
+        width: 1440px; */
         
         grid-template-columns: repeat(1, 1fr);
         margin: 5%
         
+    }
+    .sponsor_sec{
+        /* margin-top: 900px; */
     }
 
 }
@@ -265,4 +276,3 @@ main{
     }
     
 }
-
